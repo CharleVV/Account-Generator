@@ -1,5 +1,5 @@
 # _*_ coding:UTF-8 _*_
-for line in open('F:\工作\无线校园网教师开户\教师账号生成\old.txt'):
+for line in open('Path\old.txt'):
     name_txt = list(line[0:3])
     if '\t' in name_txt:
         name = list(line[0:2])
@@ -31,6 +31,6 @@ for line in open('F:\工作\无线校园网教师开户\教师账号生成\old.t
         Generator_UserName = Name + '\t' + Account + "\t" + Phone + '\t' + Department
     else:
         Generator_UserName = Name + '\t' + Account + '\t' + IDCard + '\t' + Phone + '\t' + Department
-    Username = open("F:\工作\无线校园网教师开户\教师账号生成\\New.txt", 'a')
+    Username = open("Path\\New.txt", 'a')
     Username.writelines(Generator_UserName)
     Username.close()
